@@ -4,7 +4,9 @@ import "react-multi-carousel/lib/styles.css";
 import meter1 from "../assets/img/meter1.svg";
 import meter2 from "../assets/img/meter2.svg";
 import meter3 from "../assets/img/meter3.svg";
+import  "../styles/Skills.scss"
 import react from "../assets/img/logo192.png";
+import colorSharp from "../assets/img/color-sharp.png";
 
 export default function Skills() {
   const responsive = {
@@ -42,27 +44,36 @@ export default function Skills() {
                 dolorem a! Quas?
               </p>
             </div>
-      <Carousel responsive={responsive} infinite={true} className="skill-slider">
-        <div className="item">
-          <img src={meter1} alt="skill" />
-          <h5>Web Development</h5>
-        </div>
-        <div className="item">
-          <img src={meter2} alt="skill" />
-          <h5>React</h5>
-        </div>
-        <div className="item">
-          <img src={meter3} alt="skill" />
-          <h5>Web Development</h5>
-        </div>
-        <div className="item">
-          <img src={react} alt="skill" />
-          <h5>Web Development</h5>
-        </div>
-      </Carousel>
+            <Carousel
+              responsive={responsive}
+              infinite={true}
+              className="skill-slider"
+            >
+              <div className="item">
+                <img src={meter1} alt="skill" />
+                <h5>Web Development</h5>
+              </div>
+              <div className="item">
+                <img src={meter2} alt="skill" />
+                <h5>React</h5>
+              </div>
+              <div className="item">
+                <img src={meter3} alt="skill" />
+                <h5>Web Development</h5>
+              </div>
+              <div className="item">
+                <img src={react} alt="skill" />
+                <h5>Web Development</h5>
+              </div>
+            </Carousel>
           </Col>
         </Row>
       </Container>
+      <img
+        src={colorSharp}
+        alt="backgroundcolor"
+        className="background-img-left"
+      />
     </section>
   );
 }

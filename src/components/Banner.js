@@ -52,7 +52,7 @@ export default function Banner() {
           <Col xs={12} md={6} xl={4}>
             <span className="tagline">Welcome To my portfolio</span>
             <h1>
-              <span className="wrap">{text}</span>
+              <span className="wrap">Hi there I am a... <br/>{text}</span>
             </h1>
             <p>
               Lorem ipsum, dolor sit amet consectetur adipisicing elit. Libero
