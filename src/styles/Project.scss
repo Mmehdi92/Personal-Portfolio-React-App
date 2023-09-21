@@ -1,0 +1,54 @@
+.project {
+  h2 {
+    font-size: 55px;
+    font-weight: 700;
+    text-align: center;
+  }
+  p {
+    color: #bbbbbb;
+    font-size: 22px;
+    letter-spacing: 0.8px;
+    line-height: 1.5rem;
+    text-align: center;
+    width: 60%;
+    margin: 14px auto 30px auto;
+  }
+
+  .nav-item {
+    width: 30%;
+    border: 2px solid #fff;
+    margin: 0 auto;
+
+    .nav-link {
+      background-color: transparent;
+      border-radius: 0%;
+      padding: 17px 0;
+      color: #fff;
+      width: 100%;
+      font-weight: 500;
+      position: relative;
+      text-align: center;
+      z-index: 0;
+
+      &:hover {
+        content: "";
+        background-color: #fff;
+        color: black;
+        transition: ease-in-out 0.3s;
+      }
+      &:focus {
+        background-color: rgba(179, 198, 252, 0.836);
+        color: #000000;
+      }
+    }
+  }
+
+  .background-image-right {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 60%;
+    z-index: -4;
+    margin-bottom: 0;
+  }
+}
